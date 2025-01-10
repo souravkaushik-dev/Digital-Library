@@ -1,6 +1,4 @@
 # Digital-Library
-Here's a complete `README.md` for your project, "Sourav Kaushik's Digital Library," detailing its functionality, usage, and code structure:
-
 ---
 
 # **Sourav Kaushik's Digital Library**
