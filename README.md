@@ -1,126 +1,158 @@
-# Digital-Library
----
-
-# **Sourav Kaushik's Digital Library**
+# 📚 Sourav Kaushik's Digital Library
 
 **Version:** 1.0  
 **Author:** Sourav Kaushik
 
-## **Project Overview**
-"Sourav Kaushik's Digital Library" is a command-line application written in C. The app provides interactive options for users to explore my bio, professional portfolio, projects, and contact details. It includes URL redirection to my full portfolio website and showcases my professional journey in an intuitive way.
+---
 
-## **Key Features**
-- `About Me` section with my bio and professional background.
-- `Portfolio` section with a link to my full portfolio website.
-- `Contact Info` section with a list of contact numbers.
-- `Projects` section with descriptions of my key projects.
-- Command-based interaction, where users can type specific commands to get the information they need.
-- Cross-platform URL redirection to open the portfolio website.
+## 🚀 Project Overview
 
-## **Getting Started**
+**Sourav Kaushik's Digital Library** is an interactive command-line application built in C that serves as a personal, digital showcase of my portfolio, bio, projects, and contact information. The app offers an intuitive, user-friendly interface where users can explore my professional journey, key projects, and get redirected to my full portfolio website, all from the command line.
 
-### **Prerequisites**
-- A C compiler (e.g., GCC, Clang).
-- Terminal or command-line interface.
+---
 
-### **Installation**
-1. Clone the repository or download the project files.
-    ```bash
-    git clone https://github.com/yourusername/digital-library.git
-    ```
-2. Navigate to the project directory.
-    ```bash
-    cd digital-library
-    ```
-3. Compile the program.
-    ```bash
-    gcc main.c -o digital-library
-    ```
-4. Run the program.
-    ```bash
-    ./digital-library
-    ```
+## 💡 Key Features
 
-## **How It Works**
+- **About Me Section**: Get an overview of my bio and professional background.
+- **Portfolio**: Easy URL redirection to my full portfolio website.
+- **Contact Info**: Quick access to my contact numbers.
+- **Projects Section**: Brief descriptions of the key projects I’m working on.
+- **Interactive Commands**: Type specific commands to retrieve the desired information.
+- **Cross-Platform URL Redirection**: Works seamlessly on Windows, macOS, and Linux for opening the portfolio website in a browser.
 
-### **Commands:**
-- **about**: Displays Sourav Kaushik's bio and professional background.
-- **portfolio**: Redirects to Sourav's full portfolio website.
-- **phone**: Lists contact numbers.
-- **projects**: Lists key projects Sourav is working on.
-- **help**: Displays available commands.
-- **exit**: Exits the application.
+---
 
-### **Functions:**
+## 📋 Getting Started
+
+### 🔧 Prerequisites
+
+- A working C compiler (such as GCC or Clang).
+- Access to a terminal or command-line interface.
+
+### 🛠️ Installation Steps
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/digital-library.git
+   ```
+
+2. **Navigate to the project directory**:
+   ```bash
+   cd digital-library
+   ```
+
+3. **Compile the program**:
+   ```bash
+   gcc main.c -o digital-library
+   ```
+
+4. **Run the program**:
+   ```bash
+   ./digital-library
+   ```
+
+---
+
+## 🖥️ How It Works
+
+### Available Commands:
+
+- `about`: Displays my bio and professional background.
+- `portfolio`: Opens my full portfolio website in your default browser.
+- `phone`: Lists my contact numbers.
+- `projects`: Shows key projects I’m working on, with brief descriptions.
+- `help`: Lists all available commands.
+- `exit`: Exits the application.
+
+---
+
+## 📂 Functions & Code Overview
 
 1. **`display_about()`**  
-   - **Description**: Displays the "About Me" section.
-   - **Key Variables**:  
-     - `about_text`: A string containing bio and background information.
-   - **Usage**: Called when the user types `about`.
+   - **Purpose**: Shows a detailed bio and professional background.
+   - **Usage**: Triggered when the user types `about`.
 
 2. **`open_portfolio()`**  
-   - **Description**: Opens the portfolio website in the user's default browser.
-   - **Key Variables**:  
-     - `url`: A string containing the URL of the portfolio website.
-   - **Platform-Specific Behavior**: Uses system calls to open the URL on different platforms (Windows, macOS, Linux).
+   - **Purpose**: Opens my portfolio website.
+   - **Platform Compatibility**: Uses system-specific commands (`start`, `open`, `xdg-open`).
+   - **Usage**: Triggered when the user types `portfolio`.
 
 3. **`display_contact_info()`**  
-   - **Description**: Lists Sourav's contact numbers.
-   - **Key Variables**:  
-     - `contacts[]`: Array of strings storing phone numbers.
-   - **Usage**: Called when the user types `phone`.
+   - **Purpose**: Displays my contact numbers.
+   - **Usage**: Triggered when the user types `phone`.
 
 4. **`list_projects()`**  
-   - **Description**: Displays key projects and their brief descriptions.
-   - **Key Variables**:  
-     - `projects[]`: Array storing project titles.
-     - `project_descriptions[]`: Array storing corresponding project descriptions.
-   - **Usage**: Called when the user types `projects`.
+   - **Purpose**: Shows a list of my key projects and their descriptions.
+   - **Usage**: Triggered when the user types `projects`.
 
 5. **`help_menu()`**  
-   - **Description**: Shows the available commands for the user.
-   - **Key Variables**:  
-     - `commands[]`: Array of available command strings.
-   - **Usage**: Called when the user types `help`.
+   - **Purpose**: Lists all available commands.
+   - **Usage**: Triggered when the user types `help`.
 
 6. **`exit_program()`**  
-   - **Description**: Safely exits the application.
-   - **Key Variables**: None.
-   - **Usage**: Called when the user types `exit`.
+   - **Purpose**: Safely exits the application.
+   - **Usage**: Triggered when the user types `exit`.
 
-## **File Structure**
+---
 
-- `main.c`: The core of the application, containing all functions and the command-line interface logic.
-- `README.md`: Documentation for the project.
-  
-## **Variables Overview**
+## 🗂️ File Structure
 
-- **String Variables**:
-  - `about_text`: Holds the text for the "About Me" section.
-  - `url`: Stores the portfolio website URL.
-  - `contacts[]`: Array containing contact phone numbers.
-  - `projects[]`: Array of project names.
-  - `project_descriptions[]`: Array of project descriptions.
-  
+- `main.c`: Contains the program logic, including command handling and function definitions.
+- `README.md`: This document that explains how to use the app.
+
+---
+
+## 📌 Variable Overview
+
+- **Text Variables**:
+  - `about_text`: Stores my bio and professional background.
+  - `url`: The URL for my portfolio website.
+  - `contacts[]`: Stores my contact numbers.
+  - `projects[]`: Names of my key projects.
+  - `project_descriptions[]`: Brief descriptions of each project.
+
 - **Command Variables**:
-  - `commands[]`: Array holding all valid commands (`about`, `portfolio`, `phone`, `projects`, etc.).
+  - `commands[]`: Stores the list of valid commands (`about`, `portfolio`, `phone`, `projects`, etc.).
 
-## **Usage Example**
+---
 
-1. Type `about` to get a detailed bio.
-2. Type `portfolio` to open Sourav's portfolio website in the browser.
-3. Type `phone` to list contact numbers.
-4. Type `projects` to see a list of Sourav’s key projects.
-5. Type `help` for a list of available commands.
-6. Type `exit` to quit the program.
+## 🧑‍💻 Example Commands
 
-## **Platform Compatibility**
-- **Windows**: Uses the `start` command to open URLs.
-- **macOS**: Uses the `open` command to open URLs.
-- **Linux**: Uses the `xdg-open` command to open URLs.
+1. **About Me**:  
+   Type `about` to get a detailed bio and career summary.
+   
+2. **Open Portfolio**:  
+   Type `portfolio` to open my portfolio website in your default browser.
+   
+3. **Contact Info**:  
+   Type `phone` to see a list of my contact numbers.
+   
+4. **Projects**:  
+   Type `projects` to view my key projects and their descriptions.
+   
+5. **Help**:  
+   Type `help` to see all available commands.
+   
+6. **Exit**:  
+   Type `exit` to close the program.
 
-## **License**
+---
+
+## 🌐 Platform Compatibility
+
+- **Windows**: Opens URLs using the `start` command.
+- **macOS**: Opens URLs using the `open` command.
+- **Linux**: Opens URLs using the `xdg-open` command.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License. Feel free to use, modify, and share!
+
+---
+
+Explore my journey, discover my projects, and get in touch—all from the convenience of a simple command-line interface!
 This project is licensed under the MIT License.
 
 ---
